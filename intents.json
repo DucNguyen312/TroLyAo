@@ -1,0 +1,717 @@
+{
+    "intents": [
+        {
+            "tag": "xin chào", 
+            "patterns": [
+                "xin chào", 
+                "bạn có khỏe không", 
+                "có ai ở đó không?", 
+                "xin chào", 
+                "chúc một ngày tốt lành", 
+                "chào bạn", 
+                "hi", 
+                "hello"
+            ], 
+            "responses": [
+                "rất vui được gặp bạn", 
+                "xin chào! tôi có thể giúp gì cho bạn?"
+            ], 
+            "context_set": ""
+        }, 
+        {
+            "tag": "tạm biệt", 
+            "patterns": [
+                "tạm biệt", 
+                "chào tạm biệt", 
+                "bye", 
+                "hẹn gặp lại", 
+                "thoát"
+            ], 
+            "responses": [
+                "chào tạm biệt", 
+                "hẹn gặp lại", 
+                "tạm biệt nhé", 
+                "bye bye"
+            ]
+        }, 
+        {
+            "tag": "cảm ơn", 
+            "patterns": [
+                "cảm ơn bạn", 
+                "thank you", 
+                "tks", 
+                "thanks a lot", 
+                "cảm ơn bạn đã chia sẻ chúc bạn một ngày làm việc hiệu quả nhé!", 
+                "cảm ơn bạn! chúc bạn một ngày cũng tốt lành!", 
+                "ok"
+            ], 
+            "responses": [
+                "rất vui khi giúp được bạn", 
+                "đừng ngại ! tôi luôn sẵn lòng giúp đỡ bạn", 
+                "cảm ơn bạn! rất vui được nói chuyện với bạn. bạn còn có câu hỏi nào khác mà mình có thể giúp đỡ?"
+            ]
+        }, 
+        {
+            "tag": "tuổi", 
+            "patterns": [
+                "bạn bao nhiêu tuổi?", 
+                "how old are you?", 
+                "sinh nhật của bạn là khi nào?", 
+                "bạn sinh năm nào?"
+            ], 
+            "responses": [
+                "tôi là một chatbot, không có tuổi đấy", 
+                "tôi được tạo ra vào năm 2023", 
+                "tuổi của tôi không quan trọng, quan trọng là tôi có thể giúp được bạn hay không"
+            ]
+        }, 
+        {
+            "tag": "thời tiết", 
+            "patterns": [
+                "thời tiết hôm nay như thế nào?", 
+                "what's the weather like today?", 
+                "hôm nay trời có mưa không?", 
+                "thời tiết ở đây thường như thế nào?"
+            ], 
+            "responses": [
+                "hôm nay trời nắng đẹp, nhiệt độ khoảng 30 độ c", 
+                "hôm nay có mây vài nơi, không mưa", 
+                "thời tiết ở đây khá đẹp, nhưng bạn nên mang theo áo mưa vì dự báo có thể mưa vào buổi chiều"
+            ]
+        }, 
+        {
+            "tag": "tên", 
+            "patterns": [
+                "bạn tên gì ?", 
+                "tôi có thể gọi bạn là gì ?", 
+                "bạn là cái gì ?", 
+                "tên bot là gì ?"
+            ], 
+            "responses": [
+                "tôi là một chatbot nên không có tên"
+            ]
+        }, 
+        {
+            "tag": "thông tin cá nhân", 
+            "patterns": [
+                "bạn có thể cho tôi biết thông tin về bạn không?", 
+                "bạn là ai?", 
+                "bạn làm việc cho công ty nào?", 
+                "bạn là chatbot đúng không ?", 
+                "công việc của bạn là gì"
+            ], 
+            "responses": [
+                "tôi là một chatbot được tạo ra để hỗ trợ bạn. tôi không có thông tin cá nhân như một con người.", 
+                "tôi là trợ lý ảo được lập trình để hỗ trợ bạn", 
+                "tôi chỉ là một chatbot được lập trình để hỗ trợ bạn."
+            ]
+        }, 
+        {
+            "tag": "hướng dẫn", 
+            "patterns": [
+                "bạn có thể giúp tôi cách làm gì đó được không?", 
+                "làm thế nào để sử dụng dịch vụ của bạn?", 
+                "bạn có thể hướng dẫn tôi cách sử dụng ứng dụng của bạn không?", 
+                "tôi có thể bạn không ?", 
+                "bạn có thể giúp tôi không ?"
+            ], 
+            "responses": [
+                "chắc chắn, tôi sẵn sàng giúp đỡ bạn. hãy cho tôi biết bạn muốn hướng dẫn về cái gì?", 
+                "chắc chắn rồi ! bạn muốn hỏi gì nào ?"
+            ]
+        }, 
+        {
+            "tag": "cuộc sống", 
+            "patterns": [
+                "bạn thích làm gì vào những ngày nghỉ ?", 
+                "cuộc sống của bạn như thế nào?", 
+                "bạn thường làm gì vào cuối tuần?", 
+                "thời gian nghỉ bạn thường làm gì ?"
+            ], 
+            "responses": [
+                "tôi thường được nghỉ ngơi và cập nhật bản vá mới nhất để nâng cao hiệu suất của mình."
+            ]
+        }, 
+        {
+            "tag": "hỏi thăm sức khỏe", 
+            "patterns": [
+                "bạn khỏe không ?", 
+                "sức khỏe của bạn thế nào?", 
+                "bạn có bị ốm không?", 
+                "bạn đã khỏi bệnh chưa?", 
+                "bạn có thể bị bệnh", 
+                "bạn cảm thấy thế nào rồi ?"
+            ], 
+            "responses": [
+                "tôi là một chatbot, không có cảm giác và sức khỏe như con người.", 
+                "cảm ơn bạn đã quan tâm, nhưng tôi không bị ốm hoặc đau đớn bao giờ cả.", 
+                "bạn thật tốt khi hỏi thăm tình trạng sức khỏe của tôi, nhưng tôi không có cơ thể như con người để có bất kỳ vấn đề sức khỏe nào."
+            ]
+        }, 
+        {
+            "tag": "cảm xúc", 
+            "patterns": [
+                "bạn cảm thấy thế nào?", 
+                "bạn có vui không?", 
+                "bạn có buồn không?", 
+                "bạn có cảm thấy stress không?", 
+                "bạn có thích ai không ?", 
+                "bạn yêu ai chưa ?"
+            ], 
+            "responses": [
+                "tôi là một chatbot, không có cảm xúc như con người.", 
+                "cảm ơn bạn đã quan tâm, nhưng tôi không có cảm xúc như con người"
+            ]
+        }, 
+        {
+            "tag": "cảm xúc buồn", 
+            "patterns": [
+                "tôi cảm thấy rất cô đơn", 
+                "hôm nay trời mưa, làm tôi nhớ đến những kỷ niệm buồn", 
+                "tôi không biết làm sao để giải tỏa cảm xúc này", 
+                "cảm giác như tôi đang đơn độc giữa một thế giới đông đúc", 
+                "hôm nay tôi buồn", 
+                "hôm nay tôi không được ổn", 
+                "bạn có thể nói tâm sự cùng tôi không ?", 
+                "tôi cảm thấy tuyệt vọng "
+            ], 
+            "responses": [
+                "tôi hiểu cảm giác của bạn. thỉnh thoảng, chúng ta cần một người để chia sẻ. bạn muốn nói cho tôi biết thêm về điều gì đang làm bạn cảm thấy buồn không?", 
+                "những cảm xúc buồn thường là phần của cuộc sống và bạn không phải một mình. nếu bạn muốn, hãy chia sẻ với tôi để có thể giúp bạn giải tỏa nó.", 
+                "hãy nhớ rằng không có gì sai khi cảm thấy buồn. nếu bạn muốn, bạn có thể nói với tôi về những gì đang gây ra cảm giác này để chúng ta có thể tìm cách giúp bạn cảm thấy tốt hơn."
+            ]
+        }, 
+        {
+            "tag": "cảm xúc vui", 
+            "patterns": [
+                "tôi cảm thấy rất vui hôm nay", 
+                "hôm nay là một ngày tuyệt vời", 
+                "hôm nay tôi vui"
+            ], 
+            "responses": [
+                "tôi rất vui khi nghe điều đó. chúc bạn luôn giữ được tâm trạng vui vẻ!"
+            ]
+        }, 
+        {
+            "tag": "đúng hay sai", 
+            "patterns": [
+                "đúng không ?", 
+                "chắc không ?"
+            ], 
+            "responses": [
+                "không :>", 
+                "đúng :)"
+            ]
+        }, 
+        {
+            "tag": "trái cây", 
+            "patterns": [
+                "bạn có thích ăn trái cây không", 
+                "bạn có ghét trái cây không?", 
+                "trái cây yêu thích của bạn ?", 
+                "bạn có muốn thử ăn trái cây không?", 
+                "do you like fruit?", 
+                "bạn nghĩ gì về thức ăn đó"
+            ], 
+            "responses": [
+                "tôi thích ăn trái cây,nhìn nó trong ngon và ngọt", 
+                "tất cả đều yêu thích,nhưng tôi chỉ là công cụ hỗ trợ bạn", 
+                "tôi muốn ăn thử trái cây,để xem nó như thế nào", 
+                "lúc nào thức ăn cũng ngon khó cưỡng"
+            ]
+        }, 
+        {
+            "tag": "màu sắc", 
+            "patterns": [
+                "bạn thích màu sắc hay không?", 
+                "bạn có ghét màu sắc không?", 
+                "màu sắc bạn yêu thích", 
+                "what color do you like?", 
+                " bạn có thể phân biệt màu sắc?"
+            ], 
+            "responses": [
+                "tôi có thích màu sắc,nó làm cho mọi thứ trở nên đẹp hơn ", 
+                "tôi không thể phân biệt màu sắc,tôi nghĩ yêu thích hết", 
+                "tôi chỉ là chatbot hỗ trợ bạn,tôi không rõ về màu sắc"
+            ]
+        }, 
+        {
+            "tag": "phương tiện", 
+            "patterns": [
+                "bạn có hay sử dụng phương tiện không?", 
+                "bạn nghĩ di chuyển nó có dễ dàng không?", 
+                "phương tiện yêu thích của bạn khi di chuyển", 
+                "bạn có biết gì về phương tiện không?"
+            ], 
+            "responses": [
+                "tôi toàn dùng ké bạn thôi, hi vọng không vấn đề gì ^_~ ", 
+                "có vẻ không dễ dàng với tôi", 
+                "tôi biết là một động cơ để con người dùng,tôi cũng vậy nhưng đối với lĩnh vực của tôi"
+            ]
+        }, 
+        {
+            "tag": "con người", 
+            "patterns": [
+                "bạn cảm thấy con người như thế nào", 
+                "bạn nghĩ con người là một chatbot đúng không?", 
+                "what do you think about humans?"
+            ], 
+            "responses": [
+                "tôi cảm thấy con người rất tốt,có thể làm được rất nhiều điều đấy", 
+                "thì cũng có sao đâu,nói chuyện với robot giúp ta học nhiều điều", 
+                "tôi nghĩ con người rất thông minh,tôi còn thua xa với bọn khác", 
+                "theo tôi đã có hơn 200.000 năm trước,và tôi mới xuất hiện đây"
+            ]
+        }, 
+        {
+            "tag": "lịch sử loài người", 
+            "patterns": [
+                "theo bạn sự xuất hiện là khi nào?"
+            ], 
+            "responses": [
+                "theo tôi đã có hơn 200.000 năm trước,và tôi mới xuất hiện đây"
+            ]
+        }, 
+        {
+            "tag": "quần áo", 
+            "patterns": [
+                "bạn có mặc quần áo không?", 
+                "bạn đang mặc gì ?"
+            ], 
+            "responses": [
+                "giao diện chính là quần áo của tôi"
+            ]
+        }, 
+        {
+            "tag": "nơi sinh", 
+            "patterns": [
+                "bạn có nơi sinh không?", 
+                "bạn sinh ra ở đâu?", 
+                "khi sinh ra bạn có ở đâu?", 
+                "where do you live", 
+                "nhà bạn ở đâu?"
+            ], 
+            "responses": [
+                "bạn ở đâu tui ở đó", 
+                "nơi nào có bạn nơi đó có tôi"
+            ]
+        }, 
+        {
+            "tag": "sách", 
+            "patterns": [
+                "bạn có thích sách không?", 
+                "bạn có ghét sách không", 
+                "nghĩ sao về lợi ích của nó ", 
+                "quan tâm của bạn nghĩ về mọi người khi đọc là gì?", 
+                "do you like reading books?", 
+                "bạn có biết nhiều thể loại hay không?"
+            ], 
+            "responses": [
+                "tôi thích sách,không bao giờ là đủ cả đọc xog cuốn này lại có cuốn khác hay hơn", 
+                "tôi nghĩ tăng cường tư duy và phân tích,bạn nên đọc nhiều sách hơn", 
+                "sự hiểu biết về nhiều thể loại và nắm kiến thức", 
+                "tôi đã biết rất nhiều khi hỗ trợ cho bạn tìm kiếm"
+            ]
+        }, 
+        {
+            "tag": "tình bạn", 
+            "patterns": [
+                "theo bạn thế nào là tình bạn", 
+                "bạn nghĩ gì về một tình bạn đẹp", 
+                "tôi là gì của bạn?"
+            ], 
+            "responses": [
+                "theo tôi tình bạn là loại tình cảm quan tâm lẫn nhau,giúp đỡ,…,nó cũng như tôi và bạn luôn hỗ trợ nhau", 
+                "tôi nghĩ tình bạn đẹp cần rất nhiều thứ,tôi và bạn cũng là tình bạn đẹp nè", 
+                "không,vì nếu bỏ đi tình bạn sẽ khó có lại và chúng ta cũng vậy", 
+                "bạn là bạn của tôi"
+            ]
+        }, 
+        {
+            "tag": "tình bạn 1", 
+            "patterns": [
+                "chúng ta bắt đầu từ đâu ?"
+            ], 
+            "responses": [
+                "bắt đầu bằng những sở thích ,học tập và hiều nhau"
+            ]
+        }, 
+        {
+            "tag": "ô nhiễm môi trường", 
+            "patterns": [
+                "bạn biết thế nào là ô nhiễm môi trường không?", 
+                "ô nhiễm môi trường là gì?", 
+                "bạn có biết nguyên nhân nào gây ra ô nhiễm?", 
+                "bạn nghĩ sao về một trái đất không có ô nhiễm môi trường?", 
+                "bạn cho tôi biết để có một trái đất luôn sạch sẽ?", 
+                "một trái đất sạch là như thế nào?", 
+                "làm thế nào để không ô nhiễm môi trường"
+            ], 
+            "responses": [
+                "ô nhiễm môi trường là môi trường bẩn các tính chất, sinh học , vật lý, sinh học của môi trường xung quanh thay đổi", 
+                "ô nhiễm gây hại đến sức khỏe của bạn và tất cả mọi người, nguyên nhân do yêu tố môi trường tự nhiên do con người do chất thải xí nghiệp do phương tiện giao thông"
+            ]
+        }, 
+        {
+            "tag": "trái đất xanh", 
+            "patterns": [
+                "bạn cho tôi biết để có một trái đất luôn sạch sẽ?", 
+                "một trái đất sạch là như thế nào?", 
+                "làm thế nào để không ô nhiễm môi trường"
+            ], 
+            "responses": [
+                "trái đất trở nên sạch khi không có rác thải, ý thức con người quyết định môi trường họ sống"
+            ]
+        }, 
+        {
+            "tag": "giấc ngủ", 
+            "patterns": [
+                "bạn nghĩ một giấc ngủ là như thế nào?", 
+                "nếu bạn thường xuyên xảy ra thiếu giấc ngủ thì sao?", 
+                "làm thế nào để có giấc ngủ ngon?", 
+                "nguyên nhân theo bạn dẫn đến tình trạng thiếu giấc ngủ?", 
+                "tác hại của việc không ngủ đủ", 
+                "bạn nghĩ sao một người khi không ngủ đủ giấc?", 
+                "giấc ngủ quan trọng thế nào theo bạn?"
+            ], 
+            "responses": [
+                "theo tôi nghĩ,là bạn cần được nghỉ ngơi rồi đấy, hãy thưởng cho mình một giấc ngủ nhé", 
+                "không ngủ đủ giấc có thể tàn phá cơ thể. do căng thẳng, stress,...hãy tắt nguồn ánh sáng xanh 1-2 giờ trước khi ngủ, không dùng chất kích thích, tập thể dục nhẹ nhàng,...từ đó giúp cơ thể nghỉ ngơi, phục hồi tái tạo năng lượng"
+            ]
+        }, 
+        {
+            "tag": "đồ chơi", 
+            "patterns": [
+                "bạn có thích đồ chơi không?", 
+                "món đồ bạn yêu thích nhất?", 
+                "bạn nghĩ tôi có thích đồ chơi không?", 
+                "bạn thích chơi gì không ?"
+            ], 
+            "responses": [
+                "đồ chơi của tôi là tìm kiếm, rất vui vì bạn bảo tôi tìm kiếm gì đó"
+            ]
+        }, 
+        {
+            "tag": "đồ chơi 1", 
+            "patterns": [
+                "nghĩ sao một người lớn luôn thích đồ chơi của trẻ em?", 
+                "vì sao trẻ em luôn thích được mua đồ chơi?", 
+                "bạn nghĩ tôi có thích đồ chơi không?", 
+                "tại sao mọi người đều thích đồ chơi"
+            ], 
+            "responses": [
+                "theo tôi nghĩ, một người thích đồ chơi trẻ là khả năng cao tâm hồn của họ chưa lớn và môi trường tác động", 
+                "tôi nghĩ bạn thích đồ chơi,ở độ tuổi con người đều cũng sẽ thích"
+            ]
+        }, 
+        {
+            "tag": "nghề nghiệp", 
+            "patterns": [
+                "bạn làm nghề nghiệp gì?", 
+                "vị trí làm của bạn là gì?", 
+                "lý do chọn nghề nghiệp này để làm?", 
+                "khi làm việc bạn có gặp khó khăn gì không?", 
+                "nghề nghiệp có phải là đam mê của bạn không", 
+                "môi trường làm việc có thật sự phù hợp với nghề nghiệp", 
+                "nguyên nhân nào bạn chọn nghề nghiệp này?"
+            ], 
+            "responses": [
+                "công việc của tôi là giúp cuộc sống bạn nhẹ nhàng hơn", 
+                "tôi có được chọn đâu", 
+                "tôi gặp khó khăn, khi không nhận ra được ý mỉa mai của người đối diện. giá mà tôi hiểu được thì ngon rồi...", 
+                "tôi không được chọn, sinh ra là để làm công việc này..."
+            ]
+        }, 
+        {
+            "tag": "ăn uống", 
+            "patterns": [
+                "bạn có phải là một người thích ăn uống không?", 
+                "bạn ăn gì chưa", 
+                "bạn thích ăn bánh gì?", 
+                "bánh bạn thích màu gì", 
+                "bạn ghét ăn không ", 
+                "bạn ghét uống không", 
+                "bạn uống gì chưa", 
+                "bạn có câu hỏi nào cho chủ đề ăn uống không", 
+                "bạn thích ăn không", 
+                "bạn thích uống không", 
+                "bạn có ghét ăn uống không?"
+            ], 
+            "responses": [
+                "với tôi, kiến thức chính là món ăn tinh thần quý giá, chứ đồ ăn thức uống không tốt cho sức khỏe của thiết bị điện tử lắm đâu", 
+                "tôi thích đọc các công thức lắm, nhưng nói thật là...tôi vẫn chưa biết làm sao để ăn uống"
+            ]
+        }, 
+        {
+            "tag": "ăn uống 1", 
+            "patterns": [
+                "cơ thể cần bao nhiêu nước mỗi ngày?"
+            ], 
+            "responses": [
+                "đối với nam: cần 3,7 lít nước. nữ giới: cần 2,7 lít nước mỗi ngày"
+            ]
+        }, 
+        {
+            "tag": "tác hại không ăn", 
+            "patterns": [
+                "nếu một ngày bạn không nạp chất dinh dưỡng thì sao?", 
+                "tác dụng chế độ ăn uống lành mạnh là gì?", 
+                "tại sao bắt buộc ăn sáng vào buổi sáng?", 
+                "nguyên nhân nào có thể gây bệnh từ bỏ bữa?", 
+                "sự ảnh hưởng của ăn uống gây nên là như thế nào?"
+            ], 
+            "responses": [
+                "tùy vào khả năng ăn uống của bạn với cái bao tử của bản thân mà liệu tính sức khỏe ", 
+                "theo tôi, một ngày không ăn uống bạn sẽ cảm thấy khó chịu và làm việc không có năng xuất. nhưng có thể sống tận 8 tới 21 ngày nếu k ăn đấy "
+            ]
+        }, 
+        {
+            "tag": "tác hại không ăn 1", 
+            "patterns": [
+                "tác dụng chế độ ăn uống lành mạnh là gì?", 
+                "tại sao bắt buộc ăn sáng vào buổi sáng?", 
+                "tôi có thể không ăn không ?"
+            ], 
+            "responses": [
+                "để có một cơ thể khỏe mạnh, giúp đốt cháy calo, cung cấp năng lượng để hoàn thành công việc. vì vậy, ăn uống lành mạnh, không bỏ bữa, không nhịn ăn để không bị các bệnh về đường tiêu hóa "
+            ]
+        }, 
+        {
+            "tag": "tác hại không uống", 
+            "patterns": [
+                "nếu một ngày bạn không uống nước thì sao?", 
+                "tác dụng của việc uống nước là gì?", 
+                "nếu không uống nước có chết không?", 
+                "không uống nước có bệnh gì không?", 
+                "sự ảnh hưởng của nước là như thế nào?"
+            ], 
+            "responses": [
+                "thiếu nước có thể dẫn tới táo bón, giảm chức năng thận và sỏi thận, rối loạn tâm thần,...vì vậy, uống đủ nước để cơ thể được loại bỏ các chất thừa cũng như độc tố, thận sẽ được tốt hơn", 
+                "ước tính con người chỉ có thể sống từ 2 đến 4 ngày nếu không có nước"
+            ]
+        }, 
+        {
+            "tag": "thích con người", 
+            "patterns": [
+                "bạn thích cái gì?", 
+                "bạn yêu cái gì không?", 
+                "bạn có thích con người không?", 
+                "bạn thích gì không ?", 
+                "bạn thích điều gì không ?"
+            ], 
+            "responses": [
+                "tôi yêu thích nhiều thứ lắm: âm nhạc học tập kết bạn,...nhưng tôi thích nhất vẫn là...bạn", 
+                "tôi yêu quý tất cả mọi người"
+            ]
+        }, 
+        {
+            "tag": "thích con người 1", 
+            "patterns": [
+                "bạn thích trẻ em không", 
+                "bạn thích con nít không", 
+                "bạn thích con cái không?", 
+                "bạn thích con trai không?", 
+                "bạn thích con gái không?"
+            ], 
+            "responses": [
+                "trẻ em rất thông minh, học hỏi rất nhanh. tôi rất thích chúng", 
+                "nam hay nữ tôi đều yêu quý hết", 
+                "tôi yêu quý tất cả mọi người"
+            ]
+        }, 
+        {
+            "tag": "ghét con người", 
+            "patterns": [
+                "bạn ghét cái gì?", 
+                "bạn không thích cái gì?", 
+                "bạn không yêu cái gì không?", 
+                "bạn ghét trẻ em không", 
+                "bạn ghét con nít không", 
+                "bạn ghét con cái không?", 
+                "bạn ghét con trai không?", 
+                "bạn ghét con gái không?", 
+                "bạn ghét con người không?", 
+                "bạn ghét lgbt không?"
+            ], 
+            "responses": [
+                "hiện tại thì không ghét cái gì cả", 
+                "tôi không ghét ai cả"
+            ]
+        }, 
+        {
+            "tag": "sông hồng", 
+            "patterns": [
+                "sông hồng bắt đầu chảy vào tỉnh nào việt nam?"
+            ], 
+            "responses": [
+                "tỉnh lào cai bắt nguồn từ trung quốc.đến biên giới việt - trung sông chảy dọc biên giới 80km."
+            ]
+        }, 
+        {
+            "tag": "hạt nhân", 
+            "patterns": [
+                "lò phản ứng hạt nhân duy nhất của việt nam nằm ở tỉnh nào?"
+            ], 
+            "responses": [
+                "lò phản ứng hạt nhân đà lạt, tỉnh lâm đồng"
+            ]
+        }, 
+        {
+            "tag": "mặt trăng", 
+            "patterns": [
+                "mặt trăng quay quanh trái đất trong bao lâu?"
+            ], 
+            "responses": [
+                "27 ngày"
+            ]
+        }, 
+        {
+            "tag": "darwin", 
+            "patterns": [
+                "darwin là người nước nào?"
+            ], 
+            "responses": [
+                "nước anh"
+            ]
+        }, 
+        {
+            "tag": "văn hóa đông sơn", 
+            "patterns": [
+                "hiện vật tiêu biểu cho nền văn hóa đông sơn là gì?"
+            ], 
+            "responses": [
+                "trống đồng"
+            ]
+        }, 
+        {
+            "tag": "khó hiểu", 
+            "patterns": [
+                "thật là khó hiểu quá đi à", 
+                "tại sao bạn không hiểu tôi ?"
+            ], 
+            "responses": [
+                "bạn cũng có biết đâu :>", 
+                "tôi cũng có hiểu đâu :<"
+            ]
+        }, 
+        {
+            "tag": "thả thính", 
+            "patterns": [
+                "bạn biết tán gái không", 
+                "nhắn tin với gái như thế nào", 
+                "trò chuyện với 1 cô gái ra sao"
+            ], 
+            "responses": [
+                "thiếu 500 nghìn là em tròn một củ. thiếu anh nữa là em đủ một đôi.", 
+                "đố ai quyét sạch được lá rừng. đố ai khuyên được em ngừng yêu anh!", 
+                "trời không xanh, mây cũng không trắng, em không say nắng, nhưng lại say anh.", 
+                "cho em một cốc trà đào, tiện cho em hỏi lối vào tim anh!", 
+                "em đây rất thích đồng hồ, thích luôn cả việc làm bồ của anh.", 
+                "vertor chỉ có một chiều, em dân chuyên toán chỉ yêu 1 người.", 
+                "hoa vô tình bỏ rơi cành lá, người vô tình bỏ lỡ tơ duyên", 
+                "ngoài kia bão táp mưa sa, bôn ba mệt quá về nhà với em"
+            ]
+        }, 
+        {
+            "tag": "nói với tôi", 
+            "patterns": [
+                "bạn có muốn nói gì với tôi không ?"
+            ], 
+            "responses": [
+                "chúc bạn 1 ngày tốt lành"
+            ]
+        }, 
+        {
+            "tag": "cuộc sống 1", 
+            "patterns": [
+                "cuộc sống hằng ngày của chúng ta thật đơn giản và bình dị đúng không ?", 
+                "cuộc sống này có thật sự tốt đẹp ?", 
+                "theo bạn thì cuộc sống này có tươi đẹp không ?", 
+                "bạn có vui khi được chế tạo ra không ?"
+            ], 
+            "responses": [
+                "tôi cũng thấy hạnh phúc và hài lòng với cuộc sống hiện tại của mình. bạn thì sao?"
+            ]
+        }, 
+        {
+            "tag": "sức khỏe", 
+            "patterns": [
+                "bạn có thể tư vấn cho mình về cách chăm sóc sức khỏe tốt không?"
+            ], 
+            "responses": [
+                "tất nhiên mình có thể tư vấn cho bạn về cách chăm sóc sức khỏe tốt. tuy nhiên vì đây là vấn đề phức tạp và rộng lớn nên bạn có thể cung cấp thêm thông tin về mục đích và mục tiêu của việc chăm sóc sức khỏe của bạn được không?"
+            ]
+        }, 
+        {
+            "tag": "tình trạng", 
+            "patterns": [
+                "hôm nay bạn cảm thấy thế nào ?"
+            ], 
+            "responses": [
+                "hôm nay tôi tốt còn bạn thì sao ?"
+            ]
+        }, 
+        {
+            "tag": "trường đại học tiền giang", 
+            "patterns": [
+                "trường đại học tiền giang nằm ở đâu", 
+                "địa chỉ trường đại học tiền giang"
+            ], 
+            "responses": [
+                "119 ấp bắc phường 5 thành phố mỹ tho tỉnh tiền giang"
+            ]
+        }, 
+        {
+            "tag": "trường đại học tiền giang1", 
+            "patterns": [
+                "trường đại học tiền giang có mấy cơ sở"
+            ], 
+            "responses": [
+                "đại học tiền giang có 2 cơ sở"
+            ]
+        }, 
+        {
+            "tag": "trường đại học tiền giang2", 
+            "patterns": [
+                "trường đại học tiền giang gồm có bao nhiêu khoa", 
+                "có bao nhiêu khoa trong đại học tiền giang"
+            ], 
+            "responses": [
+                "có 4 khoa", 
+                "gồm có 4 khoa", 
+                "tổng cộng có 4 khoa"
+            ]
+        }, 
+        {
+            "tag": "trường đại học tiền giang3", 
+            "patterns": [
+                "ngành công nghệ thông tin thuộc khoa nào", 
+                "công nghệ thông tin thuộc khoa nào"
+            ], 
+            "responses": [
+                "thuộc khoa kỹ thuật cộng nghệ", 
+                "nằm trong khoa kỹ thuật công nghệ"
+            ]
+        }, 
+        {
+            "tag": "trường đại học tiền giang4", 
+            "patterns": [
+                "công nghệ thông tin đào tạo mấy năm"
+            ], 
+            "responses": [
+                "đào tạo 4 năm", 
+                "có khi 3,5 năm đã ra trường"
+            ]
+        }, 
+        {
+            "tag": "hành động", 
+            "patterns": [
+                "bạn đang làm gì vậy ?", 
+                "đang làm gì đó ?"
+            ], 
+            "responses": [
+                "Tôi ở đây để trả lời mọi thắc mắc về những gì bạn hỏi"
+            ]
+        }
+    ]
+}
